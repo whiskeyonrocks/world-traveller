@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    overflow: scroll;
+    width: 100vw;
+    background-color: rgb(250 239 239);
+}
+
+/* Hide scroll bar for Webkit-based browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+    width: 0.1rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
