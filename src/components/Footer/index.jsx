@@ -8,7 +8,7 @@ const Footer = () => {
         <Link to="/" className="navlink" >
         <img style={{height:  '12vh'}} src={logo} alt="World Traveller site logo" />
       </Link>
-      <p style={copyrightStyle}>&copy; 2023 World Traveller</p>
+      <p style={copyrightStyle}>&copy; 2024 World Traveller</p>
       <p style={contactStyle}>Contact: <a style={linkStyle} href="mailto:contact@worldtraveller.com">contact@worldtraveller.com</a></p>
       <p style={addressStyle}>Address: 123 Main Street, Toronto, Canada</p>
     </div>
