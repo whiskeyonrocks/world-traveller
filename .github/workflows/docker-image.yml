@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: |
-        docker build . --file Dockerfile --tag world-traveller:$(date +%s)
-        docker tag world-traveller:$(date +%s) whiskeyonrocks/world-traveller:latest
+        docker build . --file Dockerfile --tag world-traveller:latest
+        docker tag world-traveller:latest whiskeyonrocks/world-traveller:latest
         docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
         docker push whiskeyonrocks/world-traveller:latest
